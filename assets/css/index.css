@@ -1,24 +1,110 @@
 body {
   height: 100%;
+  font-family: 'Montserrat', sans-serif;
+
+  /* debug */
+  /*background-color: rgb(255, 211, 211);*/
 }
 
+/*
+  - - GENERAL CSS
+*/
+
+ul {
+  list-style-type: square;
+}
+
+#main {
+  height: 100em;
+  width: 100%;
+
+  /* debug */
+  /*background-color: rgb(211, 255, 211);*/
+}
+
+a, a:link, a:active, a:visited {
+  /*font-weight: bold;*/
+  text-decoration: none;
+  color: rgb(0, 179, 136);
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/*
+  - - HEADER RELATED CSS STYLING - -
+*/
+
 #header {
+  /* Flexbox CSS styles */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* Flexbox CSS styles */
+
   height: 120px;
-  background-color: grey;
   padding: 10px;
+  border-bottom: 3px solid black;
+}
+
+#buttons {
+  padding-right: 20px;
+  display: inline-block;
+  float: right;
 }
 
 .button {
-  display: inline;
-  float: right;
-  width: 100px;
-  height: 100px;
-  background-color: red;
+  margin: 5px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 179, 136);
+  border-radius: 5px;
 }
 
 #logo {
+  display: inline-block;
   background-image: url('../images/HPE-logo.png');
   background-repeat: no-repeat;
   background-size: contain;
   height: 100px;
+  width: 300px;
+}
+
+/*
+  - - SIDEBAR RELATED CSS STYLING
+*/
+
+.active-metric {
+  font-weight: bold;
+  color: rgb(0, 79, 36);
+}
+
+#side-bar {
+  float: left;
+  height: 100%;
+  width: 20%;
+  min-width: 200px;
+
+  border-right: 3px solid black;
+
+  /* debug */
+  /*background-color: rgb(255, 255, 211);*/
+}
+
+#content {
+  height: 100em;
+  width: 100%;
+
+  /* debug */
+  /*background-color: rgb(211, 255, 255);*/
+}
+
+#side-bar {
+  font-size: 15px;
+  padding-top: 10px;
+  margin-left: -10px;
 }
