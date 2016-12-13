@@ -22,7 +22,7 @@ ul {
   /*background-color: rgb(211, 255, 211);*/
 }
 
-a, a:link, a:active, a:visited {
+a, a:link, a:visited {
   /*font-weight: bold;*/
   text-decoration: none;
   color: rgb(0, 179, 136);
@@ -78,9 +78,15 @@ a:hover {
   - - SIDEBAR RELATED CSS STYLING
 */
 
-.active-metric {
+.active-metric a {
+  color: rgb(0,79,33) !important;
   font-weight: bold;
-  color: rgb(0, 79, 36);
+  font-size: 17px;
+  transition: 0.5s
+}
+
+.overall-metric a {
+  transition: 0.5s
 }
 
 #side-bar {

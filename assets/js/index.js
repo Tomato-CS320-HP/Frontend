@@ -59,12 +59,20 @@ $(document).ready(function(){
 
     $('.overall-metric a').on("click", function() {
       console.log('Metric button clicked')
-      if($(this).hasClass("active-metric")) {
-        $(this).removeClass("active-metric")
-      } else {
-        $(this).addClass("active-metric")
-      }
+      var $actual = $(this).parent()
 
+      if($actual.hasClass('active-metric')) {
+        $actual.removeClass('active-metric')
+      }
+      else if($actual.hasClass('metric')) {
+        console.log('Top metric selected')
+        $('.overall-metric.active-metric').removeClass('active-metric')
+        $actual.addClass('active-metric')
+      }
+      else if($actual.hasClass('performance-metric')) {
+        $('.metric.active-metric').removeClass('active-metric')
+        $actual.addClass('active-metric')
+      }
 
       updateContent()
     });
