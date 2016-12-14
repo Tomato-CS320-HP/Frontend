@@ -1,6 +1,10 @@
   $(document).ready(function(){
       console.log('Page has fully loaded')
 
+
+$(document).ready(function(){
+    console.log('Page has fully loaded')
+
       var values_to_load = {
         'large': [
           {
