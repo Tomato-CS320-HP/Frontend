@@ -1,3 +1,7 @@
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="fusioncharts.js"></script>
+<script type="text/javascript" src="fusioncharts.jqueryplugin.js"></script>
+
 $(document).ready(function(){
     console.log('Page has fully loaded')
 
