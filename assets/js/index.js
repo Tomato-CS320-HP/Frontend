@@ -96,65 +96,64 @@ $(document).ready(function(){
       var revenueChart = new FusionCharts({
           "type": "column2d",
           "renderAt": "fusioncharts",
-          "width": "500",
-          "height": "300",
+          "width": "700",
+          "height": "400",
           "dataFormat": "json",
           "dataSource":  {
             "chart": {
-              "caption": "Monthly revenue for last year",
-              "subCaption": "Harry's SuperMart",
-              "xAxisName": "Month",
-              "yAxisName": "Revenues (In USD)",
+              "caption": "Average Writes Greater Than 32ms(Percentage)",
+              "xAxisName": "Storage Device ids",
+              "yAxisName": "Average writesGt32msPct",
               "theme": "fint"
            },
            "data": [
               {
-                 "label": "Jan",
-                 "value": "420000"
+                 "label": "Armory",//472
+                 "value": "0.279"
               },
               {
-                 "label": "Feb",
-                 "value": "810000"
+                 "label": "Murmur II",//473
+                 "value": "0.05"
               },
               {
-                 "label": "Mar",
-                 "value": "720000"
+                 "label": "Frogman",//474
+                 "value": "0.024"
               },
               {
-                 "label": "Apr",
-                 "value": "550000"
+                 "label": "Kismet",//475
+                 "value": "0.08"
               },
               {
-                 "label": "May",
-                 "value": "910000"
+                 "label": "Sergei Kravinoff",//477
+                 "value": "0.104"
               },
               {
-                 "label": "Jun",
-                 "value": "510000"
+                 "label": "Kl'rt",//478
+                 "value": "0.04"
               },
               {
-                 "label": "Jul",
-                 "value": "680000"
+                 "label": "Zuras",//479
+                 "value": "0.07"
               },
               {
-                 "label": "Aug",
-                 "value": "620000"
+                 "label": "Mastermind",//480
+                 "value": "0.02"
               },
               {
-                 "label": "Sep",
-                 "value": "610000"
+                 "label": "SuperPro",//482
+                 "value": "0.25"
               },
               {
-                 "label": "Oct",
-                 "value": "490000"
+                 "label": "Link",//483
+                 "value": "0.04"
               },
               {
-                 "label": "Nov",
-                 "value": "900000"
+                 "label": "Nameless One",//486
+                 "value": "0.114"
               },
               {
-                 "label": "Dec",
-                 "value": "730000"
+                 "label": "Miss America",//487
+                 "value": "0.411"
               }
             ]
         }
