@@ -1,6 +1,6 @@
-  $(document).ready(function(){
+$(document).ready(function(){
       console.log('Page has fully loaded')
-
+})
 
 $(document).ready(function(){
     console.log('Page has fully loaded')
