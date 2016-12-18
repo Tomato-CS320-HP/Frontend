@@ -91,7 +91,8 @@ $(document).ready(function(){
       Logic for AJAX calls and the like to update the center
       panel of the page would go here
     */
-    FusionCharts.ready(function(){
+    $.getJSON('http://echo.jsontest.com/title/ipsum/content/blah', function (data) {
+      FusionCharts.ready(function(){
       var revenueChart = new FusionCharts({
           "type": "column2d",
           "renderAt": "fusioncharts",
@@ -159,6 +160,11 @@ $(document).ready(function(){
         }
 
     });
+  console.log(data)
   revenueChart.render();
   })
+    })
+
+    
+
   }
